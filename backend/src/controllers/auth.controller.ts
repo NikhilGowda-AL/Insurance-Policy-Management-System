@@ -3,14 +3,14 @@ import { asyncHandler } from '../utils/asyncHandler';
 import { ApiResponse } from '../utils/ApiResponse';
 import { authService } from '../services/auth.service';
 import { MESSAGES } from '../constants/messages';
-import { env, isProduction } from '../config/env';
+import { env } from '../config/env';
 
 const cookieOptions = {
   httpOnly: true,
-  secure: isProduction,
-  sameSite: isProduction ? 'none' as const : 'lax' as const,
+  secure: true,
+  sameSite: "none" as const,
   maxAge: env.cookieMaxAgeMs,
-  path: '/',
+  path: "/",
 };
 
 export const login = asyncHandler(async (req: Request, res: Response) => {
