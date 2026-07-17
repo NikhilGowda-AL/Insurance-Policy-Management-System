@@ -95,7 +95,7 @@ ADMIN_PASSWORD=Admin@12345
 ## Insurance Agent
 
 ```env
-AGENT_EMAIL=agent@ipms.local
+AGENT_EMAIL=agent.demo@ipms.local
 AGENT_PASSWORD=Agent@12345
 ```
 
