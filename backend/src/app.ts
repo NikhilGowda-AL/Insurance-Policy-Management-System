@@ -8,7 +8,7 @@ import routes from './routes';
 import { errorHandler } from './middlewares/error.middleware';
 import { notFoundHandler } from './middlewares/notFound.middleware';
 import { apiRateLimiter } from './middlewares/rateLimiter.middleware';
-import {  isProduction } from './config/env';
+import { isProduction } from './config/env';
 import { logger } from './config/logger';
 
 const app: Application = express();

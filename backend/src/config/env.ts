@@ -26,7 +26,7 @@ export const env: EnvConfig = {
   nodeEnv: get('NODE_ENV', 'development'),
   port: Number(get('PORT', '5000')),
   clientUrl: get('CLIENT_URL', 'http://localhost:3000'),
-  mongoUri: get('MONGO_URI', 'mongodb://127.0.0.1:27017/insurance_policy_management'),
+  mongoUri: get('MONGO_URI', 'mongodb+srv://nikhilal2703_db_user:Ym1vpR1Q3pStgYmE@appcluster.0uwysy4.mongodb.net/?appName=AppCluster'),
   jwtSecret: get('JWT_SECRET', 'dev_secret_change_me'),
   jwtExpiresIn: get('JWT_EXPIRES_IN', '15m'),
   cookieName: get('COOKIE_NAME', 'ipms_token'),
