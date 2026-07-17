@@ -7,10 +7,10 @@ import { env, isProduction } from '../config/env';
 
 const cookieOptions = {
   httpOnly: true,
-  secure: isProduction,
-  sameSite: 'lax' as const,
+  secure: true,
+  sameSite: 'none' as const,
   maxAge: env.cookieMaxAgeMs,
-  path: '/'
+  path: '/',
 };
 
 export const login = asyncHandler(async (req: Request, res: Response) => {
