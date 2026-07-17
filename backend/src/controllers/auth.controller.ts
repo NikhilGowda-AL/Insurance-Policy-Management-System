@@ -7,8 +7,8 @@ import { env, isProduction } from '../config/env';
 
 const cookieOptions = {
   httpOnly: true,
-  secure: true,
-  sameSite: 'none' as const,
+  secure: isProduction,
+  sameSite: isProduction ? 'none' as const : 'lax' as const,
   maxAge: env.cookieMaxAgeMs,
   path: '/',
 };
