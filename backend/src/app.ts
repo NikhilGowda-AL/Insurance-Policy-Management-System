@@ -12,6 +12,7 @@ import { isProduction } from './config/env';
 import { logger } from './config/logger';
 
 const app: Application = express();
+app.set('trust proxy', 1);
 
 app.use(helmet());
 app.use(
